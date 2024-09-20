@@ -1,0 +1,709 @@
+.navbar ul li a {
+    width: fit-content;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    left: 0;
+    top: 90%;
+    transition: all 0.3s;
+
+}
+.navbar .active::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar ul li a:hover::after {
+    width: 100%;
+}
+
+#home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)), url(imge/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.fw-bolder {
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 55px;
+}
+
+.f-animation {
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 60px;
+    line-height: 72px;
+    font-weight: 200;
+}
+
+.f-animation ::after {
+    content: " |";
+    animation: move 5s ease-in-out 1s infinite;
+}
+#Home .home-icon {
+    cursor: pointer;
+}
+
+@keyframes move {
+    0% {
+        content: "|";
+
+    }
+
+
+    2% {
+        content: "D|";
+
+    }
+
+    4% {
+        content: "De|";
+
+    }
+
+    6% {
+        content: "Des|";
+
+    }
+
+    8% {
+        content: "Desi|";
+
+    }
+
+    10% {
+        content: "Desig|";
+
+    }
+
+    12% {
+        content: "Design|";
+
+    }
+
+    14% {
+        content: "Designe|";
+
+    }
+
+    16% {
+        content: "Designer|";
+
+    }
+
+    18% {
+        content: "Designe|";
+
+    }
+
+    20% {
+        content: "Design|";
+
+    }
+
+    22% {
+        content: "Desig|";
+
+    }
+
+    24% {
+        content: "Desi|";
+
+    }
+
+    26% {
+        content: "Des|";
+
+    }
+
+    28% {
+        content: "De|";
+
+    }
+
+    30% {
+        content: "D|";
+
+    }
+
+    40% {
+        content: "|";
+
+    }
+
+    /* =============================================== */
+    42% {
+        content: "D|";
+
+
+    }
+
+    44% {
+        content: "De|";
+
+
+    }
+
+    46% {
+        content: "Dev|";
+
+
+    }
+
+    48% {
+        content: "Deve|";
+
+
+    }
+
+    50% {
+        content: "Devel|";
+
+
+    }
+
+    52% {
+        content: "Develo|";
+
+
+    }
+
+    54% {
+        content: "Develop|";
+
+    }
+
+    56% {
+        content: "Develope|";
+
+    }
+
+    58% {
+        content: "Developer|";
+
+    }
+
+    60% {
+        content: "Develope|";
+
+    }
+
+    62% {
+        content: "Develop|";
+
+    }
+
+    64% {
+        content: "Develo|";
+
+    }
+
+    66% {
+        content: "Devel|";
+
+    }
+
+    68% {
+        content: "Deve|";
+
+    }
+
+    70% {
+        content: "Dev|";
+
+    }
+
+    72% {
+        content: "De|";
+
+    }
+
+    74% {
+        content: "D|";
+
+    }
+
+    76% {
+        content: "|";
+
+    }
+
+    78% {
+        content: "L|";
+
+    }
+
+    80% {
+        content: "La|";
+
+    }
+
+    82% {
+        content: "Lar|";
+
+    }
+
+    84% {
+        content: "Larr|";
+
+    }
+
+    86% {
+        content: "Larry |";
+
+    }
+
+    90% {
+        content: "Larry D|";
+
+    }
+
+    92% {
+        content: "Larry Da|";
+
+    }
+
+    94% {
+        content: "Larry Dani|";
+
+    }
+
+    96% {
+        content: "Larry Danie|";
+
+    }
+
+    98% {
+        content: "Larry Daniel|";
+
+    }
+
+    100% {
+        font-weight: 400;
+        content: "Larry Daniels|";
+        font-size: 60px;
+    }
+
+
+
+}
+
+
+
+#about .imge-dots {
+    padding: 0 0 0 30px;
+    position: relative;
+}
+
+#about img {
+    width: 80%;
+
+
+}
+
+#about .imge-dots::after {
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 50px;
+    bottom: -30px;
+    background-image: url(./imge/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+#about .width-1 {
+    width: 95%;
+    height: 25px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+#about .width-2 {
+    width: 80%;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+#about .width-3 {
+    width: 90%;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+#about h3 {
+    margin-bottom: 0;
+    color: #343434;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+#about .UI {
+    color: #999;
+
+    margin-bottom: 30px;
+}
+
+#about .btn-1 {
+    font-size: 13px;
+    font-weight: 400;
+    background-color: black;
+    padding: 10px 30px;
+    transition: all 0.5s;
+}
+
+#about .btn-1:hover{
+    background-color: white;
+    border: 1px solid black;
+    color: black !important;
+}
+
+#about .btn-2 {
+    font-size: 13px;
+    font-weight: 400;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px 30px;
+    transition: all 0.5s;
+}
+#about .btn-2:hover{
+    background-color: black;
+    color: white !important;
+}
+
+#about p {
+    color: #748182;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+#Services {
+    background-color: #F7F7F7;
+}
+
+#Services h2 {
+    width: fit-content;
+    border-bottom: 5px dotted #F1F1F1;
+    color: #343434;
+    font-size: 40px;
+    font-weight: 900;
+
+}
+
+#Services .icon {
+    width: 50px;
+    background-color: #F7F7F7;
+    box-sizing: border-box;
+}
+
+#Services .icon i {
+    right: 50%;
+    transform: translate(50%, 50%);
+
+}
+
+#Services .cards:hover .icon {
+    background-color: black;
+    color: white;
+    border-color: #CDE1F8;
+}
+
+#Services h6 {
+    color: #343434;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 19.8px;
+}
+
+#Services p {
+    color: #748182;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.4px;
+}
+
+
+#Portfolio h2 {
+    width: fit-content;
+    border-bottom: 5px dotted #F1F1F1;
+    color: #343434;
+    font-size: 40px;
+    font-weight: 900;
+
+}
+
+#Portfolio .nav-1 a {
+    color: #222222;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0px 15px;
+    text-decoration: none;
+    position: relative;
+}
+
+#Portfolio .nav-1 a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    top: 100%;
+    left: 0;
+    height: 2.5px;
+    background-color: #222222;
+}
+
+#Portfolio .nav-1 a:hover::after {
+    width: 100%;
+}
+#Portfolio .nav-1 .active::after {
+    content: "";
+    width: 100%;
+    height: 2.5px;
+    background-color: #222222;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#portfolio .item-1 .imgitem .web {
+    transform: translate(-50%, -50%);
+}
+
+#Portfolio .item-1 img {
+    width: 100%;
+}
+
+#Portfolio .item-1 .imgitem {
+    width: 97%;
+    height: 97%;
+    background-color: #FDFDFD;
+    opacity: 0;
+    transition: all 0.5s;
+    z-index: 99999;
+}
+
+#Portfolio .item-1:hover .imgitem {
+    opacity: 1;
+}
+
+#portfolio .imgitem .item-icon {
+
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: black;
+}
+
+#portfolio .imgitem .item-icon a {
+    color: white !important;
+
+}
+
+#portfolio .imgitem .item-icon:hover a {
+    color: black !important;
+}
+
+#portfolio .imgitem .item-icon:hover {
+    background-color: white;
+    color: #000;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+
+
+
+#Testimonials {
+    background-color: #F7F7F7;
+}
+
+#Testimonials h2 {
+    width: fit-content;
+    border-bottom: 5px dotted #F1F1F1;
+    color: #343434;
+    font-size: 40px;
+    font-weight: 900;
+
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin: 0 5px;
+    background-color: #343434 !important;
+}
+
+#Testimonials .Testimonials-item p {
+    color: #748182;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+#Testimonials .Testimonials-item h5 {
+    color: #343434;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 17.6px;
+}
+
+#Testimonials .Testimonials-item h6 {
+    color: #888888;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 17.1429px;
+}
+
+
+#Our-Team {
+    background-color: #F7F7F7;
+}
+
+#Our-Team h2 {
+    width: fit-content;
+    border-bottom: 5px dotted #F1F1F1;
+    color: #343434;
+    font-size: 40px;
+    font-weight: 900;
+
+}
+
+#Our-Team h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+font-weight: 500;
+}
+#Our-Team p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+#Our-Team .card-item1 .card-item {
+    width: 98%;
+    height: 98%;
+    background-color: #FDFDFD;
+    transition: all 0.5s;
+    z-index: 2;
+    opacity: 0;
+    transition: 0.5s;
+    transform: rotateY(180deg) scale(0.5, 0.5);
+
+}
+
+.card-item1 img {
+    transition: 0.5s ease;
+}
+
+#Our-Team .card1:hover .card-item {
+    transform: rotateY(360deg);
+    opacity: 1;
+}
+
+#Our-Team .card1:hover .card-item1 img {
+    transform: scale(1.3);
+
+}
+
+#Our-Team .card-item .item-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: black;
+}
+
+.icons-1 {
+    transform: translate(-50%, -50%);
+}
+
+#Our-Team .card-item .item-icon a {
+    color: white !important;
+
+}
+
+#Our-Team .card-item .item-icon:hover a {
+    color: black !important;
+}
+
+#Our-Team .card-item .item-icon:hover {
+    background-color: white;
+    color: #000;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+
+
+
+
+#Contact-Us h2 {
+    width: fit-content;
+    border-bottom: 5px dotted #F1F1F1;
+    color: #343434;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+#Contact-Us .icon {
+    width: 10px;
+    background-color: #F7F7F7;
+    box-sizing: border-box;
+}
+
+#Contact-Us .icon i {
+    right: 50%;
+    top: 25%;
+    transform: translate(50%, 50%);
+
+}
+
+#Contact-Us .cards:hover .icon {
+    background-color: black;
+    color: white;
+    border-color: #CDE1F8;
+}
+
+#Contact-Us .Btn-s {
+    padding: 10px 40px;
+    width: fit-content;
+    background-color: black;
+    color: white;
+    transition: all 0.5s;
+}
+
+#Contact-Us .form-control {
+    background-color: #ebebeb;
+}
+
+#Contact-Us .Btn-s:hover {
+    background-color: white;
+    color: black;
+    border: black 1px solid;
+}
+
+#footer {
+    background-color: #1c1c1c;
+}
+
+#footer p {
+    color: #748182;
+}
